@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thong Tin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Chào mừng bạn đến với 1 website chuyên nghiệp :3</h1>
+    </header>
+    <div id="profile">
+        <div id="anh">
+            <img src="concho.jpg" alt="avt" id="profileImage">
+        </div>
+        <div id="thongtin">
+            <h1>Huỳnh Ngọc Hải</h1>
+            <p><i class="fas fa-birthday-cake"></i> Ngày sinh: 18/01/2003</p>
+            <p><i class="fas fa-envelope"></i> Email: hai099089@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Phone: 0814777393</p>
+            <p><i class="fas fa-map-marker-alt"></i> Quê quán: BL</p>
+            <p><i class="fas fa-heart"></i> Sở thích: Ngủ, nghe nhạc, chơi game, đá bóng</p>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged image -->
+    <div id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        const profileImage = document.getElementById('profileImage');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modalImage');
+
+        profileImage.onclick = function() {
+            modal.style.display = "block";
+            modalImage.src = this.src; // Set the modal image source to the clicked image
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside the image
+        modal.onclick = function() {
+            closeModal();
+        }
+    </script>
+     <footer>
+        <p>&copy; 2025 Huỳnh Ngọc Hải. Tất cả quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
