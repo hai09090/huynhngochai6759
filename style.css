@@ -11,7 +11,7 @@ body {
 }
 
 #header {
-    background-color: #5cd8b3;
+    background-color: #fbd633;
     color: white;
     padding: 20px;
     text-align: center;
@@ -35,7 +35,7 @@ body {
     height: auto;
     border-radius: 75px;
     margin-right: 20px;
-    border: 3px solid #5cd8b3;
+    border: 3px solid #fbd633;
 }
 
 #thongtin {
@@ -95,7 +95,7 @@ body {
     cursor: pointer;
 }
 footer {
-    background-color: #5cd8b3;
+    background-color: #fbd633;
     color: white;
     text-align: center;
     margin-top: 360px;
